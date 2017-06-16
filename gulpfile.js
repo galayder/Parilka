@@ -89,9 +89,9 @@ gulp.task('css-libs', ['sass'], function() {
 // Watching changes
 gulp.task('default', ['watch']);
 gulp.task('watch', ['browserSync', 'sass', 'pug'], function(){
-    gulp.watch('src/templates/**/*.pug', ['pug']);
+    //gulp.watch('src/templates/**/*.pug', ['pug']);
     gulp.watch('src/sass/**/*.sass', ['sass']);
-    gulp.watch('src/**/*.html').on('change', browserSync.reload);
+    gulp.watch('src/*.html').on('change', browserSync.reload);
 });
 
 
